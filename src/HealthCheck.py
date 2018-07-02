@@ -5,16 +5,18 @@ Created on Jun 21, 2018
 '''
 import requests
 import webbrowser
-import numpy
 from Cell import Cell
 
 #update these parameters----------------------------------------------------
-CONFIGURATION_FILE = "sample.txt"
+CONFIGURATION_FILE = "sample2.txt"
 hosts = ["8080", "8180", "8280"]
 HEALTHCHECKURL = "/api/catalog/v2/categories/healthcheck"
 HTTP = "http://"
 #---------------------------------------------------------------------------
 cells = []
+
+#parallelism http://chriskiehl.com/article/parallelism-in-one-line/
+#https://stackoverflow.com/questions/2846653/how-to-use-threading-in-python
 
 def dataToHTML(cells):
     #https://stackoverflow.com/questions/33920896/table-within-an-html-document-using-python-list
