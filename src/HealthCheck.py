@@ -5,10 +5,12 @@ Created on Jun 21, 2018
 '''
 import requests
 import webbrowser
+import time
 from Cell import Cell
+from multiprocessing.dummy import Pool as ThreadPool 
 
 #update these parameters----------------------------------------------------
-CONFIGURATION_FILE = "sample2.txt"
+CONFIGURATION_FILE = "sample.txt"
 hosts = ["8080", "8180", "8280"]
 HEALTHCHECKURL = "/api/catalog/v2/categories/healthcheck"
 HTTP = "http://"
@@ -17,7 +19,7 @@ cells = []
 
 #parallelism http://chriskiehl.com/article/parallelism-in-one-line/
 #https://stackoverflow.com/questions/2846653/how-to-use-threading-in-python
-
+#https://stackoverflow.com/questions/40810816/threadpool-in-python-is-not-as-fast-as-expected
 def dataToHTML(cells):
     #https://stackoverflow.com/questions/33920896/table-within-an-html-document-using-python-list
     f = open('helloworld.html','w')
@@ -70,7 +72,6 @@ def dataToHTML(cells):
         </table>
     </body>
     </HTML>"""
-    highlightCells = []
     items = []
     for cell in cells:
         urlsToReponse = cell.getUrlAndResponse()
@@ -115,21 +116,20 @@ def dataToHTML(cells):
 
     webbrowser.open_new_tab('helloworld.html')
 
-#pings and finds the health of each server, puts it in the healthcheck dictionary in the cell class
-def requestCells(cells):
-    for cell in cells:
-        names = cell.getNames()
-        print("hi")
-        for i in range(len(hosts)):
-            url = HTTP + cell.getServerName() + ":" + hosts[i] + HEALTHCHECKURL
-            cell.addUrlAndResponse(url, "Failed Connection")
-            cell.addUrl(url)
-            try:
-                resp = requests.get(url)
-                cell.addCheck(names[i], resp.status_code) #add the name of the 8080  and the response
-                cell.addUrlAndResponse(url, resp.status_code) #add the url and the response that it receives
-            except requests.exceptions.RequestException as e:
-                print(e)
+#pings and finds the health of a cell, puts it in the healthcheck dictionary in the cell class
+def requestCell(cell):
+    names = cell.getNames()
+    print("hi")
+    for i in range(len(hosts)):
+        url = HTTP + cell.getServerName() + ":" + hosts[i] + HEALTHCHECKURL
+        cell.addUrlAndResponse(url, "Failed Connection")
+        cell.addUrl(url)
+        try:
+            resp = requests.get(url)
+            cell.addCheck(names[i], resp.status_code) #add the name of the 8080  and the response
+            cell.addUrlAndResponse(url, resp.status_code) #add the url and the response that it receives
+        except requests.exceptions.RequestException as e:
+            print(e)
 
 #populates the cell from the cell information array
 def makeCell(cellInformation):
@@ -153,7 +153,10 @@ with open(CONFIGURATION_FILE , 'r') as f:
             line = f.readline()
         makeCell(cellInformation)
         
-requestCells(cells)
+start_time = time.clock()        
 # for cell in cells:
-#     cell.printInfo()
+#     requestCell(cell)
+pool = ThreadPool(4) 
+pool.map(requestCell, cells)
+print("--- %s seconds ---" % round((time.clock() - start_time),2 ))
 dataToHTML(cells)
