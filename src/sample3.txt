@@ -1,0 +1,126 @@
+11.120.228.252	
+esu2v735	
+FCC Client Cell A - application name
+fcc_perf1_esu2v735_admin_m1 (Admin)
+fcc_perf1_esu2v735_client_m1 (Product)
+fcc_perf1_esu2v735_client_m2  (SNS)
+11.120.228.57	
+esu3v061	
+FCC Client Cell A
+fcc_perf1_esu3v061_client_m1 (Category)
+fcc_perf1_esu3v061_client_m2 (Product)
+fcc_perf1_esu3v061_client_m3  (Store)
+11.120.228.121	
+esu3v062	
+FCC Client Cell A
+fcc_perf1_esu3v062_client_m1 (Review)
+fcc_perf1_esu3v062_client_m2 (BOTSEO)
+fcc_perf1_esu3v062_client_m3
+11.120.228.252	
+esu2v735	
+FCC Client Cell A
+fcc_perf1_esu2v735_admin_m1 (Admin)
+fcc_perf1_esu2v735_client_m1 (Product)
+fcc_perf1_esu2v735_client_m2  (SNS)
+11.120.228.57	
+esu3v061	
+FCC Client Cell A
+fcc_perf1_esu3v061_client_m1 (Category)
+fcc_perf1_esu3v061_client_m2 (Product)
+fcc_perf1_esu3v061_client_m3  (Store)
+11.120.228.121	
+esu3v062	
+FCC Client Cell A
+fcc_perf1_esu3v062_client_m1 (Review)
+fcc_perf1_esu3v062_client_m2 (BOTSEO)
+fcc_perf1_esu3v062_client_m3
+11.120.228.252	
+esu2v735	
+FCC Client Cell A
+fcc_perf1_esu2v735_admin_m1 (Admin)
+fcc_perf1_esu2v735_client_m1 (Product)
+fcc_perf1_esu2v735_client_m2  (SNS)
+11.120.228.57	
+esu3v061	
+FCC Client Cell A
+fcc_perf1_esu3v061_client_m1 (Category)
+fcc_perf1_esu3v061_client_m2 (Product)
+fcc_perf1_esu3v061_client_m3  (Store)
+11.120.228.121	
+esu3v062	
+FCC Client Cell A
+fcc_perf1_esu3v062_client_m1 (Review)
+fcc_perf1_esu3v062_client_m2 (BOTSEO)
+fcc_perf1_esu3v062_client_m3
+11.120.228.252	
+esu2v735	
+FCC Client Cell A
+fcc_perf1_esu2v735_admin_m1 (Admin)
+fcc_perf1_esu2v735_client_m1 (Product)
+fcc_perf1_esu2v735_client_m2  (SNS)
+11.120.228.57	
+esu3v061	
+FCC Client Cell A
+fcc_perf1_esu3v061_client_m1 (Category)
+fcc_perf1_esu3v061_client_m2 (Product)
+fcc_perf1_esu3v061_client_m3  (Store)
+11.120.228.121	
+esu3v062	
+FCC Client Cell A
+fcc_perf1_esu3v062_client_m1 (Review)
+fcc_perf1_esu3v062_client_m2 (BOTSEO)
+fcc_perf1_esu3v062_client_m3
+11.120.228.252	
+esu2v735	
+FCC Client Cell A
+fcc_perf1_esu2v735_admin_m1 (Admin)
+fcc_perf1_esu2v735_client_m1 (Product)
+fcc_perf1_esu2v735_client_m2  (SNS)
+11.120.228.57	
+esu3v061	
+FCC Client Cell A
+fcc_perf1_esu3v061_client_m1 (Category)
+fcc_perf1_esu3v061_client_m2 (Product)
+fcc_perf1_esu3v061_client_m3  (Store)
+11.120.228.121	
+esu3v062	
+FCC Client Cell A
+fcc_perf1_esu3v062_client_m1 (Review)
+fcc_perf1_esu3v062_client_m2 (BOTSEO)
+fcc_perf1_esu3v062_client_m3
+11.120.228.252	
+esu2v735	
+FCC Client Cell A
+fcc_perf1_esu2v735_admin_m1 (Admin)
+fcc_perf1_esu2v735_client_m1 (Product)
+fcc_perf1_esu2v735_client_m2  (SNS)
+11.120.228.57	
+esu3v061	
+FCC Client Cell A
+fcc_perf1_esu3v061_client_m1 (Category)
+fcc_perf1_esu3v061_client_m2 (Product)
+fcc_perf1_esu3v061_client_m3  (Store)
+11.120.228.121	
+esu3v062	
+FCC Client Cell A
+fcc_perf1_esu3v062_client_m1 (Review)
+fcc_perf1_esu3v062_client_m2 (BOTSEO)
+fcc_perf1_esu3v062_client_m3
+11.120.228.252	
+esu2v735	
+FCC Client Cell A
+fcc_perf1_esu2v735_admin_m1 (Admin)
+fcc_perf1_esu2v735_client_m1 (Product)
+fcc_perf1_esu2v735_client_m2  (SNS)
+11.120.228.57	
+esu3v061	
+FCC Client Cell A
+fcc_perf1_esu3v061_client_m1 (Category)
+fcc_perf1_esu3v061_client_m2 (Product)
+fcc_perf1_esu3v061_client_m3  (Store)
+11.120.228.121	
+esu3v062	
+FCC Client Cell A
+fcc_perf1_esu3v062_client_m1 (Review)
+fcc_perf1_esu3v062_client_m2 (BOTSEO)
+fcc_perf1_esu3v062_client_m3

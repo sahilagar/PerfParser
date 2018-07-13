@@ -10,12 +10,13 @@ from Cell import Cell
 from multiprocessing.dummy import Pool as ThreadPool 
 
 #update these parameters----------------------------------------------------
-CONFIGURATION_FILE = "sample.txt"
+CONFIGURATION_FILE = "sample3.txt"
 hosts = ["8080", "8180", "8280"]
 HEALTHCHECKURL = "/api/catalog/v2/categories/healthcheck"
 HTTP = "http://"
 #---------------------------------------------------------------------------
 cells = []
+#application name, server, instance, specific set of urls, response status, verifiy content in url
 
 #parallelism http://chriskiehl.com/article/parallelism-in-one-line/
 #https://stackoverflow.com/questions/2846653/how-to-use-threading-in-python
@@ -158,5 +159,7 @@ start_time = time.clock()
 #     requestCell(cell)
 pool = ThreadPool(4) 
 pool.map(requestCell, cells)
+pool.close()
+pool.join()
 print("--- %s seconds ---" % round((time.clock() - start_time),2 ))
 dataToHTML(cells)

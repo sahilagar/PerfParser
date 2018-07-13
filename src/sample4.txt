@@ -1,0 +1,25 @@
+application name, server, instance, specific set of urls, response status, verify content in url
+
+FCC Client Cell A
+Server: Esu2v735
+Instance: fcc_perf1_esu3v061_client_m1 (Category), fcc_perf1_esu2v735_client_m1 (Product), fcc_perf1_esu2v735_client_m2  (SNS)
+URLS: "/api/catalog/v2/categories/healthcheck", "/api/catalog/v2/categories/healthcheck", "/api/catalog/v2/categories/healthcheck"
+200, 200, 200
+
+
+more than one url per instance
+atleast two verification options
+
+
+FCC Client Cell A
+Esu2v735
+fcc_perf1_esu3v061_client_m1 (Category), 
+URL:"/api/catalog/v2/categories/healthcheck"
+200,200
+fcc_perf1_esu2v735_client_m1 (Product),
+URL:"/api/catalog/v1/categories/healthcheck"
+200,300 
+fcc_perf1_esu2v735_client_m2  (SNS)
+URL:"/api/catalog/v2/categories/healthcheck"
+"/api/catalog/v3/categories/healthcheck"
+eof
