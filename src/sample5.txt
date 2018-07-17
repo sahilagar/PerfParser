@@ -3,7 +3,7 @@ esu2v735
 3 3 1 1
 fcc_perf1_esu3v061_client_m1 (Category)
 http://esu3v061:8080/api/catalog/v2/categories/healthcheck 200
-http://esu2v735:8180/api/catalog/v2/categories/healthcheck 200 200
+http://esu2v735:8180/api/catalog/v2/categories/healthcheck 200 300
 http://esu2v735:8280/api/catalog/v2/categories/healthcheck 200
 fcc_perf1_esu2v735_client_m1 (Product)
 http://esu3v062:8080/api/catalog/v2/categories/healthcheck 200
@@ -17,6 +17,6 @@ http://esu3v061:8080/api/catalog/v2/categories/healthcheck 200
 http://esu2v735:8280/api/catalog/v2/categories/healthcheck 200
 fcc_perf1_esu2v735_client_m1 (Product)
 http://esu3v062:8080/api/catalog/v2/categories/healthcheck 200
-http://esu2v735:8180/api/catalog/v2/categories/healthcheck 200 200
+http://esu2v735:8180/api/catalog/v2/categories/healthcheck 250 250
 fcc_perf1_esu2v735_client_m2  (SNS)
 http://esu3v062:8080/api/catalog/v2/categories/healthcheck 200

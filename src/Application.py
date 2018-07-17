@@ -29,10 +29,16 @@ class Instance(object):
         self.name = name
         self.expected = expected #urls mapped to an array of expected responses
         self.actual = copy.deepcopy(expected)
+        self.urls = []
         
-        for key in self.actual:
-            print(key)
-            
+        for url in self.actual:
+            initList = []
+            self.urls.append(url)
+            for value in self.actual[url]:
+                initList.append("Unable to connect")
+            self.actual[url] = initList
+                
+                    
             
     def printInfo(self):
         print(self.name)
