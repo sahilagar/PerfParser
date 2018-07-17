@@ -10,14 +10,20 @@ from Application import Instance
 applications = []
 CONFIGURATION_FILE = "sample7.txt"
 
+def processLine(line):
+    info = line.split(":")[1]
+    info = info.split()
+    info = " ".join(info)
+    return info
+
 with open(CONFIGURATION_FILE , 'r') as f:
-    line = f.readline()
-    while line:
-        applicationName = line
-        print(applicationName)
-        line = f.readline()
-        
-print(applicationName)
+    for line in f:
+        currApplication = Application()
+        if line.startswith("APPLICATIONNAME:"):
+            applicationName = processLine(line)
+            print(applicationName)
+            currApplication.applicationName = applicationName
+
         
         
         

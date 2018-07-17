@@ -12,14 +12,13 @@ from Application import Instance
 #----------------------------------------------------------------
 CONFIGURATION_FILE = "sample5.txt"
 #----------------------------------------------------------------
-
+#ji
 applications = []
 
 def dataToHTML():
     #https://stackoverflow.com/questions/33920896/table-within-an-html-document-using-python-list
     f = open('helloworld.html','w')
-    
-    
+
     head = """<HTML>
     <head>
     <style>

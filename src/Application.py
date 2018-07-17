@@ -9,9 +9,11 @@ class Application(object):
 
 
 
-    def __init__(self, applicationName, serverName, instances):
+    def __init__(self, applicationName = "Not Set", serverName = "Not Set", instances = None):
         self.applicationName = applicationName
         self.serverName = serverName
+        if instances == None:
+            instances = []
         self.instances = instances
         
         
